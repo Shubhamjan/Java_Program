@@ -1,0 +1,6 @@
+public class GetNotes implements Book1,Book2{
+
+	public void showNotes(){
+		System.out.println("All NOTES RECIEVED");
+	}
+}

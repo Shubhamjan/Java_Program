@@ -1,0 +1,45 @@
+package com.demo.test;
+
+import java.util.Arrays;
+
+public class ReverseVowels {
+
+	public static void main(String[] args) {
+			String st = "IceCreAm";
+			String s=st.toLowerCase();
+			char[] c=s.toCharArray();
+	        int front=0;
+	        int rear=c.length-1;
+
+	        while(front<rear){
+	            char temp1=' ';
+	            char temp2=' ';
+	            boolean f1=false;
+	            boolean f2=false;
+	            if(c[front]=='a'||c[front]=='e'||c[front]=='i'||c[front]=='o'||c[front]=='u'){
+	                temp1=c[front];
+	                f1=true;
+	                front++;
+	            }else{
+	                
+	                f1=false;
+	            }
+	             if(c[rear]=='a'||c[rear]=='e'||c[rear]=='i'||c[rear]=='o'||c[rear]=='u'){
+	                temp1=c[rear];
+	                f2=true;
+	            }else{
+	                
+	                f2=false;
+	            }
+	            if(f1==true && f2==true){
+	                c[front]=temp2;
+	                c[rear]=temp1;
+	                rear++;
+	            }
+	            System.out.println(Arrays.toString(c));
+	        }
+	        
+	    System.out.println(new String(c));
+	  }
+
+}

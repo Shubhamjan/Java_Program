@@ -1,0 +1,8 @@
+package com.demo.Thread;
+
+public class Main {
+	public static void main(String[] args) {
+		MessageThread m=new MessageThread();
+		m.start();
+	}
+}

@@ -1,0 +1,15 @@
+package com.demo.Thread;
+
+public class Main {
+	public static void main(String[] args) {
+		MessageThread m=new MessageThread();
+		TableThread t=new TableThread();
+		m.start();
+		t.start();
+		PrimeNoThread p=new PrimeNoThread();
+		p.start();
+		ArmStrong a=new ArmStrong();
+		a.start();
+		
+	}
+}

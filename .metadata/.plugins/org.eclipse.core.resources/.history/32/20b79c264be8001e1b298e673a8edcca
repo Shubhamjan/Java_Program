@@ -1,0 +1,27 @@
+package com.demo.test;
+
+import java.util.ArrayList;
+
+public class duplicate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Try programiz.pro");
+        int[]arr={2,3,2,1};
+        int n=arr.length;
+         ArrayList<Integer>lst=new ArrayList<Integer>();
+        for(int i=0;i<n;i++){
+            int ctr=0;
+            for(int j=i+1;j<n;j++){
+                if(arr[i]==arr[j]){
+                    ctr++;
+                }
+            }
+            if(ctr>1){
+                lst.add(arr[i]);
+            }
+        }
+        System.out.println(lst);
+	}
+
+}

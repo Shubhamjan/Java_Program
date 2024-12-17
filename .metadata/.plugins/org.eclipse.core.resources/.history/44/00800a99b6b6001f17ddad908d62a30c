@@ -1,0 +1,13 @@
+package com.demo.test;
+
+public class Sample { 
+	int x = 10; 
+	void display() { 
+    System.out.println(x); 
+} 
+	public static void main(String[] args) {
+		Sample t = new Sample(); 
+        t.display();  
+		
+	}
+}
